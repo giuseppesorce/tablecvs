@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val tlPipeline   = findViewById<AdaptiveTableLayout>(R.id.tlPipeline)
 
         var mTableAdapter = SampleLinkedTableAdapter(this, mCsvFileDataSource)
-//        tlPipeline.setAdapter(mTableAdapter)
+        tlPipeline.setAdapter(mTableAdapter)
 
 
         var fragment: TableFragment = TableFragment.createInstance()
