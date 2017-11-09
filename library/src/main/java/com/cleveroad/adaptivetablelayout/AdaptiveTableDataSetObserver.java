@@ -1,6 +1,6 @@
 package com.cleveroad.adaptivetablelayout;
 
-interface AdaptiveTableDataSetObserver {
+public interface AdaptiveTableDataSetObserver {
     /**
      * Notify any registered observers that the data set has changed.
      * If you change the size of the data set, you must call {@link AdaptiveTableDataSetObserver#notifyLayoutChanged()} instead

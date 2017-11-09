@@ -3,7 +3,7 @@ package com.cleveroad.adaptivetablelayout;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 
-interface DataAdaptiveTableLayoutAdapter<VH extends ViewHolder> extends AdaptiveTableAdapter<VH> {
+public interface DataAdaptiveTableLayoutAdapter<VH extends ViewHolder> extends AdaptiveTableAdapter<VH> {
     /**
      * Method calls when need to need to switch 2 columns with each other in the data matrix
      *

@@ -1639,6 +1639,7 @@ public class AdaptiveTableLayout extends ViewGroup implements ScrollHelper.Scrol
 
     @Override
     public void notifyDataSetChanged() {
+        if (!mManager.isInited()) return;
         recycleViewHolders(true);
         mVisibleArea.set(mState.getScrollX(),
                 mState.getScrollY(),

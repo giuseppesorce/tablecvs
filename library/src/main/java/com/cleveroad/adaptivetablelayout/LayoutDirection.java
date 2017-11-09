@@ -14,7 +14,7 @@ import java.lang.annotation.RetentionPolicy;
  * This interface needed because project min API is 16
  */
 @Retention(RetentionPolicy.SOURCE)
-@interface LayoutDirection {
+public @interface LayoutDirection {
     /**
      * Top left header
      */

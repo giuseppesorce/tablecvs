@@ -15,7 +15,7 @@ import java.lang.annotation.RetentionPolicy;
  * Type of adapter's ViewHolders
  */
 @Retention(RetentionPolicy.SOURCE)
-@interface ViewHolderType {
+public @interface ViewHolderType {
     /**
      * Top left header
      */
