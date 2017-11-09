@@ -93,14 +93,9 @@ public class SampleLinkedTableAdapter extends LinkedAdaptiveTableAdapter<ViewHol
         TestHeaderColumnViewHolder vh = (TestHeaderColumnViewHolder) viewHolder;
 
         vh.tvText.setText(mTableDataSource.getColumnHeaderData(column));  // skip left top header
-        int color = COLORS[column % COLORS.length];
 
-        GradientDrawable gd = new GradientDrawable(
-                mIsRtl ? GradientDrawable.Orientation.RIGHT_LEFT : GradientDrawable.Orientation.LEFT_RIGHT,
-                new int[]{ColorUtils.setAlphaComponent(color, 50), 0x00000000});
-        gd.setCornerRadius(0f);
-        vh.vGradient.setBackground(gd);
-        vh.vLine.setBackgroundColor(color);
+
+
     }
 
     @Override
@@ -151,13 +146,12 @@ public class SampleLinkedTableAdapter extends LinkedAdaptiveTableAdapter<ViewHol
     private static class TestHeaderColumnViewHolder extends ViewHolderImpl {
         TextView tvText;
         View vGradient;
-        View vLine;
+
 
         private TestHeaderColumnViewHolder(@NonNull View itemView) {
             super(itemView);
             tvText = (TextView) itemView.findViewById(R.id.tvText);
-            vGradient = itemView.findViewById(R.id.vGradient);
-            vLine = itemView.findViewById(R.id.vLine);
+
         }
     }
 

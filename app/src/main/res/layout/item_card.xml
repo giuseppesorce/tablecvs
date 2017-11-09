@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:focusableInTouchMode="true"
         android:gravity="center"
+        android:textColor="@color/colorAccent"
         android:textSize="12sp"
         tools:text="Text"
         />
